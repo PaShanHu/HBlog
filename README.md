@@ -7,4 +7,33 @@ A blog website, nodejs+express+mongodb
 
 ###展示
 
+主页
+
 ![overview](/display/1.png "Blog overview")
+
+---
+
+注册与登陆
+
+![register](/display/2.png "Blog register")
+![login](/display/3.png "Blog login")
+![login](/display/4.png "Blog login")
+
+---
+
+发表文章
+
+![post](/display/5.png "Blog post")
+![post](/display/6.png "Blog login")
+
+---
+
+标签
+
+![tags](/display/7.png "Blog tags")
+
+---
+
+归档
+
+![archive](/display/8.png "Blog archive")
