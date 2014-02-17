@@ -7,4 +7,4 @@ A blog website, nodejs+express+mongodb
 
 ###展示
 
-![overview](/display/1.png 博客网站整体)
+![overview](/display/1.png "Blog overview")
