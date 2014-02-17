@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Blog</title>
+		<link rel="stylesheet" href="/stylesheets/style.css">
+		<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+		<script type="text/javascript" src="/javascripts/msg.js"></script>
+		<script type="text/javascript" src="/editor/kindeditor-min.js"></script>
+		<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+		<script type="text/javascript" src="/javascripts/editor.js"></script>
+	</head>
+	<body>
+
+		<header>
+			<h1><%= title %></h1>
+		</header>
+
+		<nav>
+			<span><a href="/">home</a></span>
+			<span><a href="/archive">archive</a></span>
+			<span><a href="/tags">tags</a></span>
+			<% if(locals.user){ %>
+			<span><a href="/post">post</a></span>
+			<span><a href="/logout">logout</a></span>
+			<% } else { %>
+			<span><a href="/login">login</a></span>
+			<span><a href="/reg">register</a></span>
+			<% } %>
+			<span><a href="/links">links</a></span>
+			<span><form action="/search" method="GET"><input type="text" name="keyword" placeholder="SEARCH" class="search" /></form></span>
+		</nav>
+	<article>
+
+		<% if (locals.error) { %>
+			<div class='error msg'>
+				<p><%= locals.error %></p>
+			</div>
+		<% } %>
+		<% if (locals.success) { %>
+			<div class='success msg'>
+				<p><%= locals.success %></p>
+			</div>
+		<% } %>

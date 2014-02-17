@@ -1,0 +1,18 @@
+<%- include header %>
+
+<form method="post" class="medium-form">
+	<div class="form-item">
+		<span class="input-tip-left">标题：</span><input type="text" name="title" />
+	</div>
+	<div class="form-item">
+		<span class="input-tip-left">标签：</span><input class='tag' type="text" name="tag1" /><input class='tag' type="text" name="tag2" /><input class='tag' type="text" name="tag3" />
+	</div>
+	<div class="form-item">
+		<span class="input-tip-left">正文：</span><textarea name="post" rows="20" id="kEditor"></textarea>
+	</div>
+	<div class="form-item">
+		<input type="submit" value="发表" />
+	</div>
+</form>
+
+<%- include footer %>
